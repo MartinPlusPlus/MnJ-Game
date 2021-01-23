@@ -1,7 +1,7 @@
 # First Person Starter ![Godot 3.2](https://img.shields.io/badge/godot-v3.2-%23478cbf)
 ![Screenshot of FirstPersonStarter Template](https://i.imgur.com/EzNSoQZ.png)
 
-FPS template for Godot to give starter content for a new or already existing project!
+Game created by Martin and James from the 3D game godot template
 
 #### Includes:
 - Example 3D Scene
