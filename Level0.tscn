@@ -19,8 +19,8 @@ shape = SubResource( 2 )
 
 [node name="CSGBox" type="CSGBox" parent="RigidBody"]
 
-[node name="Camera" type="Camera" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.909954, 0.414709, 0, -0.414709, 0.909954, 0, 4.10431, 7.63578 )
-
 [node name="player" parent="." instance=ExtResource( 1 )]
 script = ExtResource( 2 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.909954, 0.414709, 0, -0.414709, 0.909954, 0, 4.10431, 7.63578 )
