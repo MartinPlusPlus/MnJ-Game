@@ -20,7 +20,7 @@ func _ready():
 #func _process(delta):
 #	pass
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var dir = Vector3()
 	"""
 	if (Input.is_action_pressed("move_fw")):
@@ -53,21 +53,21 @@ func _physics_process(delta):
 	
 	velocity = move_and_slide(velocity, Vector3(0, 1, 0))
 	"""
-	if Input.is_action_pressed("ui_right") and Input.is_action_pressed("ui_left"):
+	if Input.is_action_pressed("move_r") and Input.is_action_pressed("move_l"):
 		velocity.x = lerp(velocity.x,0,0.1)
-	elif Input.is_action_pressed("ui_right"):
+	elif Input.is_action_pressed("move_r"):
 		velocity.x = SPEED
-	elif Input.is_action_pressed("ui_left"):
+	elif Input.is_action_pressed("move_l"):
 		velocity.x = -SPEED
 		
 	else:
 		velocity.x = lerp(velocity.x,0,0.1)
 	
-	if Input.is_action_pressed("ui_up") and Input.is_action_pressed("ui_down"):
+	if Input.is_action_pressed("move_fw") and Input.is_action_pressed("move_bwd"):
 		velocity.z = lerp(velocity.z,0,0.1)
-	elif Input.is_action_pressed("ui_up"):
+	elif Input.is_action_pressed("move_fw"):
 		velocity.z = -SPEED
-	elif Input.is_action_pressed("ui_down"):
+	elif Input.is_action_pressed("move_bwd"):
 		velocity.z = SPEED
 		
 	else:
